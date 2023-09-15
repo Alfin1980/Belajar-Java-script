@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String</title>
+</head>
+<body>
+    
+    <script>
+
+        const value1 = parseInt("1") 
+        const value2 = 1
+        const sum = value1 + value2 
+
+        document.writeln(`<p>${sum}</p>`)
+
+        document.writeln(`<p>${parseInt("1.1")}</p>`)
+        document.writeln(`<p>${parseFloat("1.1")}</p>`)
+        document.writeln(`<p>${Number("1.1")}</p>`)
+
+        const a = 1
+        const b = 1
+        const total = a + b
+
+        document.writeln(`<p>${total}</p>`)
+        //KONVERSI KE STRING
+        const a1 = 1
+        const b1 = 1
+        const total1 = a1.toString() + b1.toString()
+
+        document.writeln(`<p>${total1}</p>`)
+
+        // NaN (Not a Number)
+        document.writeln(`<p>${parseInt("s1.1")}</p>`)
+        document.writeln(`<p>${parseFloat("a1.1")}</p>`)
+        document.writeln(`<p>${Number("salah")}</p>`)
+
+        //OPERASI PADA NaN
+        const frist = Number("salah") 
+        const totalNumber = frist + 100
+        
+
+        document.writeln(`<p>${totalNumber}</p>`)
+
+        document.writeln(`<p>${isNaN(frist)}</p>`)
+        document.writeln(`<p>${isNaN(100)}</p>`)
+
+    </script>
+</body>
+</html>
